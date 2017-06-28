@@ -20,11 +20,11 @@
     <project name="DriverFramework" path="Firmware/src/lib/DriverFramework"/>
     <project name="cmake_hexagon" remote="atlflight" path="Firmware/src/lib/DriverFramework/cmake_hexagon" revision="master"/>
     <project name="dspal" remote="atlflight" path="Firmware/src/lib/DriverFramework/dspal" revision="master"/>
-    <project name="c_library_v1" remote="mavlink" path="Firmware/mavlink/include/mavlink/v1.0" revision="d3957ad"/>
-    <project name="c_library_v2" remote="mavlink" path="Firmware/mavlink/include/mavlink/v2.0" revision="b69ecce"/>
+    <project name="c_library_v1" remote="mavlink" path="Firmware/mavlink/include/mavlink/v1.0" revision="d3957ad294029bd12318f3de6e1f4b28f4a0d2db"/>
+    <project name="c_library_v2" remote="mavlink" path="Firmware/mavlink/include/mavlink/v2.0" revision="b69eccedfcbec1f64a0340afa0c2294ca3559cfb"/>
     <project name="googletest" remote="google" path="unittest/googletest" revision="master"/>
-    <project name="genmsg" remote="ros" path="Tools/genmsg" revision="72f0383"/>
-    <project name="gencpp" remote="ros" path="Tools/gencpp" revision="26a86f0"/>
+    <project name="genmsg" remote="ros" path="Tools/genmsg" revision="72f0383f0e6a489214c51802ae12d6e271b1e454"/>
+    <project name="gencpp" remote="ros" path="Tools/gencpp" revision="26a86f04bcec0018af6652b3ddd3f680e6e3fa2a"/>
 
     <!-- Additional Projects -->
     <project name="snap_cam" remote="px4" path="snap_cam" revision="master"/>
