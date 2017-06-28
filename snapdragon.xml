@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This manifest pulls in the modules required to build for Snapdragon targets
+-->
+     
+<manifest>
+    <!-- Remotes -->
+    <remote fetch="git://github.com/ATLFlight" name="atlflight"/>
+    <remote fetch="git://github.com/PX4" name="px4"/>
+
+    <default remote="px4" revision="refs/tags/v1.6.3" sync-j="8"/>
+
+    <!-- Layers -->
+    <project name="Firmware" remote="px4" path="Firmware"/>
+    <project name="mavlink/v1.0" remote="px4" path="Firmware/mavlink/include/mavlink/v1.0"/>
+    <project name="mavlink/v2.0" remote="px4" path="Firmware/mavlink/include/mavlink/v2.0"/>
+    <project name="ecl" remote="px4" path="Firmware/src/lib/ecl"/>
+    <project name="Matrix" remote="px4" path="Firmware/src/lib/matrix"/>
+    <project name="DriverFramework" remote="px4" path="Firmware/src/lib/DriverFramework"/>
+    <project name="cmake_hexagon" remote="atlflight" path="Firmware/src/lib/DriverFramework/cmake_hexagon" revision="master"/>
+    <project name="dspal" remote="atlflight" path="Firmware/src/lib/DriverFramework/dspal" revision="master"/>
+    <project name="googletest" remote="px4" path="unittest/googletest"/>
+    <project name="genmsg" remote="px4" path="Tools/genmsg"/>
+    <project name="gencpp" remote="px4" path="Tools/gencpp"/>
+    <project name="snap_cam" remote="px4" path="snap_cam"/>
+</manifest>
