@@ -14,12 +14,12 @@
     <default remote="px4" revision="refs/tags/v1.6.3" sync-j="8"/>
 
     <!-- Projects for 1.6.3 release -->
-    <project name="Firmware" path="Firmware"/>
-    <project name="ecl" path="Firmware/src/lib/ecl"/>
-    <project name="Matrix" path="Firmware/src/lib/matrix"/>
-    <project name="DriverFramework" path="Firmware/src/lib/DriverFramework"/>
-    <project name="cmake_hexagon" remote="atlflight" path="Firmware/src/lib/DriverFramework/cmake_hexagon" revision="master"/>
-    <project name="dspal" remote="atlflight" path="Firmware/src/lib/DriverFramework/dspal" revision="master"/>
+    <project name="Firmware" path="Firmware" revision="refs/tags/v1.6.3"/>
+    <project name="ecl" path="Firmware/src/lib/ecl" revision="233c4b49c546b65eec8d0fbc1394d906f4b09d9a"/>
+    <project name="Matrix" path="Firmware/src/lib/matrix" revision="471e96ff6f5f22018b782441c6a8df19d8294181"/>
+    <project name="DriverFramework" path="Firmware/src/lib/DriverFramework" revision="f80732f1b157c18f4b520b981f705b87f87a7ac8"/>
+    <project name="dspal" remote="atlflight" path="Firmware/src/lib/DriverFramework/dspal" revision="9b46b4a57f230672ee0806a523963af70bc44f1c"/>
+    <project name="cmake_hexagon" remote="atlflight" path="Firmware/src/lib/DriverFramework/dspal/cmake_hexagon" revision="07168bd5715818802b78f674816ec851307998a7"/>
     <project name="c_library_v1" remote="mavlink" path="Firmware/mavlink/include/mavlink/v1.0" revision="d3957ad294029bd12318f3de6e1f4b28f4a0d2db"/>
     <project name="c_library_v2" remote="mavlink" path="Firmware/mavlink/include/mavlink/v2.0" revision="b69eccedfcbec1f64a0340afa0c2294ca3559cfb"/>
     <project name="googletest" remote="google" path="unittest/googletest" revision="master"/>
