@@ -5,17 +5,18 @@
      
 <manifest>
     <!-- Remotes -->
-    <remote fetch="git://github.com/ATLFlight" name="atlflight"/>
     <remote fetch="git://github.com/PX4" name="px4"/>
     <remote fetch="git://github.com/ros" name="ros"/>
     <remote fetch="git://github.com/google" name="google"/>
+    <remote fetch="git://github.com/mavlink" name="mavlink"/>
+    <remote fetch="git://github.com/ATLFlight" name="atlflight"/>
 
     <default remote="px4" revision="refs/tags/v1.6.3" sync-j="8"/>
 
     <!-- Layers -->
     <project name="Firmware" remote="px4" path="Firmware"/>
-    <project name="mavlink/v1.0" remote="px4" path="Firmware/mavlink/include/mavlink/v1.0"/>
-    <project name="mavlink/v2.0" remote="px4" path="Firmware/mavlink/include/mavlink/v2.0"/>
+    <project name="mavlink/v1.0" remote="mavlink" path="Firmware/mavlink/include/mavlink/v1.0" revision="d3957ad"/>
+    <project name="mavlink/v2.0" remote="mavlink" path="Firmware/mavlink/include/mavlink/v2.0" revision="b69ecce"/>
     <project name="ecl" remote="px4" path="Firmware/src/lib/ecl"/>
     <project name="Matrix" remote="px4" path="Firmware/src/lib/matrix"/>
     <project name="DriverFramework" remote="px4" path="Firmware/src/lib/DriverFramework"/>
