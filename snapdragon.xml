@@ -7,6 +7,8 @@
     <!-- Remotes -->
     <remote fetch="git://github.com/ATLFlight" name="atlflight"/>
     <remote fetch="git://github.com/PX4" name="px4"/>
+    <remote fetch="git://github.com/ros" name="ros"/>
+    <remote fetch="git://github.com/google" name="google"/>
 
     <default remote="px4" revision="refs/tags/v1.6.3" sync-j="8"/>
 
@@ -19,8 +21,8 @@
     <project name="DriverFramework" remote="px4" path="Firmware/src/lib/DriverFramework"/>
     <project name="cmake_hexagon" remote="atlflight" path="Firmware/src/lib/DriverFramework/cmake_hexagon" revision="master"/>
     <project name="dspal" remote="atlflight" path="Firmware/src/lib/DriverFramework/dspal" revision="master"/>
-    <project name="googletest" remote="px4" path="unittest/googletest"/>
-    <project name="genmsg" remote="px4" path="Tools/genmsg"/>
-    <project name="gencpp" remote="px4" path="Tools/gencpp"/>
+    <project name="googletest" remote="google" path="unittest/googletest" revision="master"/>
+    <project name="genmsg" remote="ros" path="Tools/genmsg" revision="master"/>
+    <project name="gencpp" remote="ros" path="Tools/gencpp" revision="master"/>
     <project name="snap_cam" remote="px4" path="snap_cam"/>
 </manifest>
