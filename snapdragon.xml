@@ -13,17 +13,19 @@
 
     <default remote="px4" revision="refs/tags/v1.6.3" sync-j="8"/>
 
-    <!-- Layers -->
-    <project name="Firmware" remote="px4" path="Firmware"/>
-    <project name="mavlink/v1.0" remote="mavlink" path="Firmware/mavlink/include/mavlink/v1.0" revision="d3957ad"/>
-    <project name="mavlink/v2.0" remote="mavlink" path="Firmware/mavlink/include/mavlink/v2.0" revision="b69ecce"/>
-    <project name="ecl" remote="px4" path="Firmware/src/lib/ecl"/>
-    <project name="Matrix" remote="px4" path="Firmware/src/lib/matrix"/>
-    <project name="DriverFramework" remote="px4" path="Firmware/src/lib/DriverFramework"/>
+    <!-- Projects for 1.6.3 release -->
+    <project name="Firmware" path="Firmware"/>
+    <project name="ecl" path="Firmware/src/lib/ecl"/>
+    <project name="Matrix" path="Firmware/src/lib/matrix"/>
+    <project name="DriverFramework" path="Firmware/src/lib/DriverFramework"/>
     <project name="cmake_hexagon" remote="atlflight" path="Firmware/src/lib/DriverFramework/cmake_hexagon" revision="master"/>
     <project name="dspal" remote="atlflight" path="Firmware/src/lib/DriverFramework/dspal" revision="master"/>
+    <project name="c_library_v1" remote="mavlink" path="Firmware/mavlink/include/mavlink/v1.0" revision="d3957ad"/>
+    <project name="c_library_v2" remote="mavlink" path="Firmware/mavlink/include/mavlink/v2.0" revision="b69ecce"/>
     <project name="googletest" remote="google" path="unittest/googletest" revision="master"/>
-    <project name="genmsg" remote="ros" path="Tools/genmsg" revision="master"/>
-    <project name="gencpp" remote="ros" path="Tools/gencpp" revision="master"/>
-    <project name="snap_cam" remote="px4" path="snap_cam"/>
+    <project name="genmsg" remote="ros" path="Tools/genmsg" revision="72f0383"/>
+    <project name="gencpp" remote="ros" path="Tools/gencpp" revision="26a86f0"/>
+
+    <!-- Additional Projects -->
+    <project name="snap_cam" remote="px4" path="snap_cam" revision="master"/>
 </manifest>
